@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Personas from "./Personas.json";
 import './App.css';
+import 'bootstrap'
 
 
 function Inicio(){
@@ -12,7 +13,7 @@ function Inicio(){
                 <div key={persona.id}> 
                 <h1>{persona.nombre}</h1>
                 <h4>{persona.apellido}</h4>
-                <Link to={`persona/${persona.id}`}> {persona.nombre} </Link>
+                <Link to={`/persona/${persona.id}`}> Ver la informacion completa de {persona.nombre} </Link>
                 <hr></hr>
                 </div>
                 )
