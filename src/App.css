@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.botones{
+  padding: 5%;
+  
+}
+
+html{
+  background-image: url(https://static.vecteezy.com/system/resources/previews/002/723/891/large_2x/modern-background-with-fluid-and-leaves-shape-green-pastel-color-and-hand-draw-line-on-white-background-flat-minimal-design-with-copy-space-for-text-free-vector.jpg);
+  background-size: cover;
+}
+.Contenedor-Mayor{
+  background-image: url(https://static.vecteezy.com/system/resources/previews/002/723/891/large_2x/modern-background-with-fluid-and-leaves-shape-green-pastel-color-and-hand-draw-line-on-white-background-flat-minimal-design-with-copy-space-for-text-free-vector.jpg);
+  background-size: cover;
+}
+
+.letra{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.centrar
+{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

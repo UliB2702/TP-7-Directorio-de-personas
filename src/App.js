@@ -11,12 +11,13 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Layout/>}></Route>
-        <Route path='/home' element={<Inicio/>}></Route>
-        <Route path='/persona/:id' element={<Persona/>}></Route>
-        <Route path='/estadisticas' element={<Estadisticas/>}></Route>
-        <Route path='/contacto' element={<Contacto/>}></Route>
-        <Route></Route>
+        <Route path='/' element={<Layout/>}>
+        <Route index element={<Inicio/>}></Route>
+        <Route path='persona/:id' element={<Persona/>}></Route>
+        <Route path='estadisticas' element={<Estadisticas/>}></Route>
+        <Route path='contacto' element={<Contacto/>}></Route>
+        </Route>
+      
       </Routes>
     </BrowserRouter>
     </>

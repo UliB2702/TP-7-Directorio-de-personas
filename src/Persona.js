@@ -13,7 +13,7 @@ function Persona() {
     }
     else {
         return (
-            <div className="App">
+            <div className="App Contenedor-Mayor letra">
                 <h1>{persona.nombre}</h1>
                 <h2>{persona.apellido} ({persona.edad})</h2>
                 <pre>{persona.email}</pre>
