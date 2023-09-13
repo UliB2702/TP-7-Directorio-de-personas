@@ -14,7 +14,7 @@ function Inicio(){
                 <div key={persona.id}> 
                 <h1>{persona.nombre}</h1>
                 <h4>{persona.apellido}</h4>
-                <button type="button" class="btn btn-link"><Link to={`/persona/${persona.id}`}> Ver la informacion completa de {persona.nombre} </Link></button>
+                <button type="button" className="btn btn-link"><Link to={`/persona/${persona.id}`}> Ver la informacion completa de {persona.nombre} </Link></button>
                 <hr></hr>
                 </div>
                 )

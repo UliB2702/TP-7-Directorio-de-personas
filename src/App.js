@@ -5,10 +5,14 @@ import Inicio from './Inicio';
 import Persona from './Persona';
 import Estadisticas from './Estadisticas';
 import Contacto from './Contacto';
+import { MyContent } from "./MyContext";
+import { useState } from "react";
+
 
 function App() {
+  const [text, setText] = useState("")
   return (
-    <>
+    <MyContent.Provider value={{text, setText}}>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout/>}>
@@ -17,10 +21,9 @@ function App() {
         <Route path='estadisticas' element={<Estadisticas/>}></Route>
         <Route path='contacto' element={<Contacto/>}></Route>
         </Route>
-      
       </Routes>
     </BrowserRouter>
-    </>
+    </MyContent.Provider>
   );
 }
 
